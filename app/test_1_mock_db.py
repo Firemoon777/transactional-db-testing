@@ -13,7 +13,7 @@ class MockSession(Session):
 def test_mock():
     mock = MockSession()
     server = Server()
-    server.id = 2
+    server.id = 1
     server.power_on = True
 
     assert power_off(mock, server) is True

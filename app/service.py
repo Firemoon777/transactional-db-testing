@@ -9,7 +9,7 @@ def power_off(session: Session, server: Server) -> bool:
     :param server:
     :return: True if success, False otherwise
     """
-    if server.id % 2 == 0:
+    if server.id % 2 != 0:
         success = True
     else:
         success = False
